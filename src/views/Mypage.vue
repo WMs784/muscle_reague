@@ -112,7 +112,9 @@
           <i class="video play icon"></i>
           <div class="content">おすすめ動画</div>
         </div>
-        <yt-video videoId="g46tZN9J_2k" :width="966" :height="543" />
+        <div class="field" width="80%">
+          <yt-video videoId="g46tZN9J_2k"/>
+        </div>
         <button @click="trainingFinish()" class="ui huge fluid orange button" type="submit">
           運動完了
         </button>

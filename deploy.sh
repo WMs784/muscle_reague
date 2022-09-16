@@ -50,12 +50,12 @@ lambda_update(){
 }
 
 s3_deploy(){
-    aws s3 mb s3://${name}-internship
+    aws s3 mb s3://team1-app-internship
 }
 
 s3_update(){
     npm run build
-    aws s3 cp ./dist s3://${name}-internship --recursive --acl public-read
+    aws s3 cp ./dist s3://team1-app-internship --recursive --acl public-read
 }
 
 deletename(){
